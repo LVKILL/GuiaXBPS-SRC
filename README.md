@@ -59,6 +59,21 @@ $ ./xbps-src pkg foo
 
 continue.....
 
+Requerimentos de Qualidade:
+
+Siga esta lista para determinar se um software ou outra tecnologia pode ser permitida no repositório do Void Linux. Exceções à lista são possíveis e podem ser aceitas, mas são extremamente improváveis. Se você acredita ter uma exceção, inicie um PR e defenda por que esse software específico, embora não atenda aos requisitos abaixo, é um bom candidato para o sistema de pacotes Void.
+
+Sistema: o software deve ser instalado em todo o sistema, não por usuário.
+
+Compilado: o software precisa ser compilado antes de ser usado, mesmo que não seja necessário para todo o sistema.
+
+Necessário: Outro pacote no repositório ou na inclusão pendente requer o pacote.
+
+FASES DE COMPILAÇÃO DO PACOTE:
+
+
+
+
 ##########################################################################################################
 
 Vídeos que ajudaram na construção do guia:
