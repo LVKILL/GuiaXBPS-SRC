@@ -24,16 +24,28 @@ Por convenção, todos os modelos começam com um comentário explicando breveme
 Um exemplo simples de modelo é o seguinte: pacote de nome "foo"
 
 # Template file for 'foo'
+
 pkgname=foo
+
 version=1.0
+
 revision=1
+
 build_style=gnu-configure
+
 short_desc="A short description max 72 chars"
+
 maintainer="name <email>"
+ 
 license="GPL-3.0-or-later"
+
 homepage="http://www.foo.org"
+
 distfiles="http://www.foo.org/foo-${version}.tar.gz"
+
 checksum="fea0a94d4b605894f3e2d5572e3f96e4413bcad3a085aae7367c2cf07908b2ff"
+
+
 
 O arquivo de modelo contém definições para baixar, criar e instalar os arquivos do pacote em um destino falso e, depois disso, um pacote binário pode ser gerado com as definições especificadas nele.
 
