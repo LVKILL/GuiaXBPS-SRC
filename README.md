@@ -2,14 +2,14 @@
 Como criar novos pacotes fonte para o XBPS,o sistema de empacotamento nativo do Void Linux.
 
 
-Este pequeno guia tem objetivo de ajudar as pessoas a criar pacotes a partir de codigo fonte de programs não disponíveis nos repositorios da distribuição Void Linux.
+Este pequeno guia tem objetivo de ajudar as pessoas a criar pacotes a partir de código fonte de programas não disponíveis nos repositórios da distribuição Void Linux.
 
-A maioria do texto foi traduzido pelo google tradutor , tendo como origem a documentação oficila disponível em ingles em:
+A maioria do texto foi traduzido pelo Google tradutor , tendo como origem a documentação oficial disponível em inglês em:
 https://github.com/void-linux/void-packages/blob/master/Manual.md
 
-A contribuição dos mais experinetes no assunto será fundamental para o assessoramento dos mais novos no mundo do Void linux e para o crescimento da distribuição no Brasil.
+A contribuição dos mais experientes no assunto será fundamental para o assessoramento dos mais novos no mundo do Void linux e para o crescimento da distribuição no Brasil.
 
-ste artigo contém um manual completo de como criar novos pacotes fonte para o XBPS, o sistema de empacotamento nativo do Void Linux.
+Este artigo contém um manual completo de como criar novos pacotes fonte para o XBPS, o sistema de empacotamento nativo do Void Linux.
 
 Introdução
 
@@ -58,9 +58,9 @@ Atualizando o Google-Chrome através do xbps-src e o repositório void-packages.
 Entrar na pasta do void-packages
 Rodar:
  $ git pull oringin master 
-  -> pra verificar atualizações diposniveis
+  -> pra verificar atualizações disponíveis
 
-Compare as versões do que esta instalado e do que foi disponibilizado no git pull
+Compare as versões do que está instalado e do que foi disponibilizado no git pull
 $ cat srcpkgs/google-chorme/template
 
  -> verifique na segunda linha do template a versão nova
@@ -69,26 +69,7 @@ $ cat srcpkgs/google-chorme/template
 Gerar novo binário para o pacote:
  $ ./xbps-src pkg google-chorme
 
-Depois de gerado o pacote binario para o Void é so prosseguir com o update da instalaçao:
+Depois de gerado o pacote binário para o Void é só prosseguir com o update da instalação:
 
 $sudo xbps-install -u --repository=home/$USER/void-packages/hostdir/binpkgs/nonfree google-chrome
-
-
-
-
-
-
-###########################################################################################################
-
-
-
- 
- 
-
-
-
-
-
-
-
 
