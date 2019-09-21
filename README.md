@@ -63,7 +63,7 @@ continue.....
 
 Vídeos que ajudaram na construção do guia:
 Void Linux - Atualizando pacotes gerados com o xbps-src = https://www.youtube.com/watch?v=98rtE1YE8Gc
-Canal do Leandro ramos
+Canal do Leandro Ramos
 
 Atualizando o Google-Chrome através do xbps-src e o repositório void-packages.
 
