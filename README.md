@@ -70,7 +70,27 @@ Compilado: o software precisa ser compilado antes de ser usado, mesmo que não s
 Necessário: Outro pacote no repositório ou na inclusão pendente requer o pacote.
 
 FASES DE COMPILAÇÃO DO PACOTE:
+A construção de um pacote consiste nas seguintes fases:
 
+1) SETUP : Esta fase prepara o ambiente para a construção de um pacote.
+
+2) FETCH : Essa fase baixa as fontes necessárias para um pacote de origem, conforme definido pela variável distfiles ou pela função do_fetch ().
+
+3) EXTRACT : Essa fase extrai os arquivos distfiles para $ wrksrc ou executa a função do_extract (), que é o diretório a ser usado para compilar o pacote de origem.
+
+4) PATCH : Essa fase aplica todos os patches no diretório patches do pacote e pode ser usada para executar outras operações antes de configurar o pacote.
+
+5) CONFIGURE : Essa fase executa a configuração de um pacote de origem, ou seja, scripts de configuração do GNU.
+
+6) BUILD : Essa fase compila / prepara os arquivos de origem via make ou qualquer outro método compatível.
+
+7) CHECK : Essa fase opcional verifica o resultado da fase de construção, por exemplo, executando make -k check.
+
+8) INSTALL : Essa fase instala os arquivos do pacote no ----------------- <masterdir> / destdir / <pkgname> - <versão>, via make install ou qualquer outro método compatível.(QUAIS OS METODOS SERIAM ESSES?)
+ 
+9) PKG : Essa fase cria os pacotes binários com arquivos armazenados no pacote destdir e os registra no repositório local.
+
+10) CLAAN : Esta fase limpa o pacote (se definido)
 
 
 
