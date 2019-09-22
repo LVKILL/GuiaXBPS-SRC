@@ -104,7 +104,7 @@ Atualizando o Google-Chrome através do xbps-src e o repositório void-packages.
 
 Entrar na pasta do void-packages
 Rodar:
- $ git pull oringin master 
+ $ git pull origin master 
   -> pra verificar atualizações disponíveis
 
 Compare as versões do que está instalado e do que foi disponibilizado no git pull
